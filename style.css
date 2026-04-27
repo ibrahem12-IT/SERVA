@@ -625,6 +625,19 @@ body {
     .hero h1 {
         font-size: 2.5rem; /* تصغير العنوان الرئيسي */
     }
+
+	.main-slider {
+		padding: 15px 5%;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.main-slider h1 {
+		font-size: 2.5rem;
+	}
+
+	.main-slider p {
+		font-size: 2.5rem;
+	}
 }
 
 /* للشاشات الأصغر من 768 بكسل (هواتف ذكية) */
