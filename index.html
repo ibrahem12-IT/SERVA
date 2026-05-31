@@ -1,281 +1,306 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سيرفا للحلول المتكاملة | الرئيسية</title>
-	<link rel="shortcut icon" type="image/x-icon" href="Img/SERVA.svg"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <!--
+    SECURITY: CSP headers should be added at the server level, not just meta tags.
+    Recommended server headers:
+      Content-Security-Policy: default-src 'self'; script-src 'self' translate.google.com; style-src 'self' fonts.googleapis.com cdnjs.cloudflare.com; img-src 'self' images.unsplash.com data:; frame-src https://www.google.com;
+      X-Content-Type-Options: nosniff
+      X-Frame-Options: SAMEORIGIN
+      Referrer-Policy: strict-origin-when-cross-origin
+      Permissions-Policy: geolocation=(), microphone=()
+  -->
+
+  <!-- Mobile-first viewport — prevents layout scaling bugs -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- SEO Meta -->
+  <meta name="description" content="سيرفا للحلول المتكاملة — شريكك الاستراتيجي في تقنية المعلومات، اللوجستيات، الطاقة المتجددة والتجارة العامة في السودان.">
+  <meta name="keywords" content="سيرفا، حلول تقنية، لوجستيات، طاقة شمسية، كاميرات مراقبة، السودان">
+  <meta name="author" content="SERVA for Integrated Solutions">
+  <meta name="theme-color" content="#004aad">
+
+  <!-- Open Graph (Social sharing) -->
+  <meta property="og:title" content="سيرفا للحلول المتكاملة">
+  <meta property="og:description" content="شريكك الاستراتيجي في تقديم خدمات التكنولوجيا، اللوجستيات، وحلول الطاقة البديلة.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Img/SERVA_Icon.png">
+
+  <title>سيرفا للحلول المتكاملة | الرئيسية</title>
+  <link rel="icon" type="image/svg+xml" href="Img/SERVA.svg">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome — integrity hash for Subresource Integrity (security) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
-<div class="topbar">
-    <div class="topbar-content">
-        <!-- <span>Contact us</span> -->
-        <div class="lang-switch">
-            <a href="#" onclick="changeLanguage('ar'); return false;">AR</a>
-            <span class="separator">/</span>
-            <a href="#" onclick="changeLanguage('en'); return false;">EN</a>
-        </div>
-    </div>
+<!-- Accessibility: skip navigation for screen readers -->
+<a href="#main-content" class="skip-link">تخطى إلى المحتوى الرئيسي</a>
+
+<!-- Page Loader -->
+<div id="loader-wrapper" role="status" aria-live="polite" aria-label="جاري التحميل">
+  <div class="loader-container">
+    <div class="loader-ring"></div>
+    <div class="loader-logo" aria-hidden="true">SERVA</div>
+  </div>
+  <p class="loader-text">مرحباً بكم في SERVA...</p>
+  <div class="loader-bar" aria-hidden="true"></div>
 </div>
 
+<!-- Google Translate Element (hidden) -->
+<div id="google_translate_element" style="display:none;" aria-hidden="true"></div>
 
-    <div id="loader-wrapper">
-        <div class="loader-container">
-        <div class="loader-ring"></div>
-        <div class="loader-logo">SERVA</div>
-        </div>
-		<div class="loader-text">مرحباً بكم في SERVA...</div>
-	</div> 
-
-
-
-
-
-<div id="google_translate_element" style="display:none;"></div> 
-
-
-
-    <nav class="navbar">
-        <div class="brand">SERVA</div>
-        <div class="nav-right">
-            <ul class="nav-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="services.html">الحلول</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
-            <button id="theme-toggle" title="تبديل المظهر">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
-
-    <!-- <header class="hero">
-        <h1> شركة سيرفا للحلول المتكاملة</h1>
-        <p>نحن شريكك الاستراتيجي في تقديم خدمات التكنولوجيا، اللوجستيات، التجارة العامة، وحلول الطاقة البديلة التي ترتقي بمؤسستك نحو الصدارة.</p>
-        <a href="services.html" class="btn">استكشف خدماتنا الشاملة</a>
-    </header> -->
-
-
-	<header class="main-slider">
-    <div class="slide active">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600" alt="سيرفا للحلول التقنية">
-        <div class="slide-content">
-            <h1 class="animate-text">شركة سيرفا للحلول المتكاملة</h1>
-            <p class="animate-text">نحن شريكك الاستراتيجي في تقديم خدمات التكنولوجيا، اللوجستيات، التجارة العامة، وحلول الطاقة البديلة التي ترتقي بمؤسستك نحو الصدارة.</p>
-            <a href="services.html" class="btn-slider animate-text">اكتشف حلولنا</a>
-        </div>
+<!-- Top Bar -->
+<div class="topbar" role="banner">
+  <div class="topbar-content">
+    <div class="lang-switch" role="navigation" aria-label="تبديل اللغة">
+      <a href="#" onclick="changeLanguage('ar'); return false;" hreflang="ar" aria-label="العربية">AR</a>
+      <span class="separator" aria-hidden="true">/</span>
+      <a href="#" onclick="changeLanguage('en'); return false;" hreflang="en" aria-label="English">EN</a>
     </div>
+  </div>
+</div>
 
-    <div class="slide">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600" alt="أنظمة الأمان">
-        <div class="slide-content">
-            <h1 class="animate-text">سيرفا للحلول التقنية</h1>
-            <p class="animate-text">نسخر أحدث التقنيات لنبني جسوراً من الحلول الذكية التي تخدم تطلعاتكم.</p>
-            <a href="contact.html" class="btn-slider animate-text">تواصل معنا</a>
-        </div>
+<!-- Navigation -->
+<nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
+  <a href="index.html" class="brand" aria-label="سيرفا - الصفحة الرئيسية">SERVA</a>
+
+  <div class="nav-right">
+    <!-- Desktop navigation links -->
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem">الرئيسية</a></li>
+      <li role="none"><a href="services.html" role="menuitem">الحلول</a></li>
+      <li role="none"><a href="about.html" role="menuitem">من نحن</a></li>
+      <li role="none"><a href="contact.html" role="menuitem">تواصل معنا</a></li>
+    </ul>
+
+    <!-- Dark mode toggle -->
+    <button id="theme-toggle" aria-label="تبديل الوضع الداكن">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <!-- Hamburger (mobile) -->
+    <button id="hamburger" class="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav Drawer -->
+<nav id="mobile-nav" class="mobile-nav" aria-label="القائمة المحمولة">
+  <a href="index.html">الرئيسية</a>
+  <a href="services.html">الحلول</a>
+  <a href="about.html">من نحن</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<!-- Hero Slider -->
+<header class="main-slider" role="banner" aria-label="شرائح العرض الرئيسية">
+
+  <div class="slide active" role="group" aria-roledescription="slide" aria-label="الشريحة 1">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600"
+         alt="مركز بيانات تقني حديث — سيرفا للحلول التقنية"
+         loading="eager" fetchpriority="high">
+    <div class="slide-content">
+      <h1 class="animate-text">شركة سيرفا للحلول المتكاملة</h1>
+      <p class="animate-text">نحن شريكك الاستراتيجي في تقديم خدمات التكنولوجيا، اللوجستيات، التجارة العامة، وحلول الطاقة البديلة.</p>
+      <a href="services.html" class="btn-slider animate-text">اكتشف حلولنا</a>
     </div>
+  </div>
 
-    <div class="slide">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600" alt="بنية تحتية">
-        <div class="slide-content">
-            <h1 class="animate-text">سيرفا لحلول الطاقة</h1>
-            <p class="animate-text">حلول الطاقة البديلة لدينا ليست مجرد خيار، بل هي استراتيجية لخفض التكاليف وتعزيز الإنتاجية.</p>
-        </div>
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="الشريحة 2">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600"
+         alt="أنظمة الأمان والمراقبة" loading="lazy">
+    <div class="slide-content">
+      <h1 class="animate-text">سيرفا للحلول التقنية</h1>
+      <p class="animate-text">نسخر أحدث التقنيات لنبني جسوراً من الحلول الذكية التي تخدم تطلعاتكم.</p>
+      <a href="contact.html" class="btn-slider animate-text">تواصل معنا</a>
     </div>
+  </div>
 
-	<div class="slide">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600" alt="بنية تحتية">
-        <div class="slide-content">
-            <h1 class="animate-text">سلاسل الإمداد</h1>
-            <p class="animate-text">حلول لوجستية متكاملة تضمن وصول طموحاتكم إلى وجهتها بأمان</p>
-        </div>
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="الشريحة 3">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600"
+         alt="حلول الطاقة الشمسية المتجددة" loading="lazy">
+    <div class="slide-content">
+      <h1 class="animate-text">سيرفا لحلول الطاقة</h1>
+      <p class="animate-text">حلول الطاقة البديلة لدينا ليست مجرد خيار، بل استراتيجية لخفض التكاليف وتعزيز الإنتاجية.</p>
     </div>
+  </div>
 
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="الشريحة 4">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600"
+         alt="سلاسل الإمداد اللوجستية" loading="lazy">
+    <div class="slide-content">
+      <h1 class="animate-text">سلاسل الإمداد</h1>
+      <p class="animate-text">حلول لوجستية متكاملة تضمن وصول طموحاتكم إلى وجهتها بأمان.</p>
+    </div>
+  </div>
 
+  <!-- Slider navigation dots -->
+  <div id="slider-dots" class="slider-dots" role="tablist" aria-label="انتقل إلى الشريحة"></div>
 </header>
 
+<!-- Main Content -->
+<main id="main-content">
 
-
-<section class="info-section">
-    <div class="info-box">
-        <i class="fas fa-info-circle"></i>
+  <!-- Info / Features Section -->
+  <section class="info-section" aria-labelledby="features-title">
+    <h2 id="features-title" class="section-title">ما يميّزنا</h2>
+    <div class="info-grid">
+      <article class="info-box">
+        <i class="fas fa-info-circle" aria-hidden="true"></i>
         <h3>من نحن</h3>
         <p>شركة سيرفا هي كيان رائد يسعى لإحداث نقلة نوعية عبر دمج التقنية الحديثة بالعمليات التجارية واللوجستية.</p>
-    </div>
-
-    <div class="info-box">
-        <i class="fas fa-chart-line"></i>
+      </article>
+      <article class="info-box">
+        <i class="fas fa-chart-line" aria-hidden="true"></i>
         <h3>مهمتنا</h3>
-        <p>نسعى إلى سد الفجوة بين التحديات المعقدة والحلول الفعّالة. ونحقق ذلك من خلال:
-الاستفادة من الخبرات المتنوعة في مختلف القطاعات للابتكار.
-الحفاظ على أعلى معايير النزاهة والسلامة.
-تقديم نتائج فعّالة من حيث التكلفة وفي الوقت المناسب لشركائنا.</p>
-    </div>
-
-    <div class="info-box">
-        <i class="fas fa-eye"></i>
+        <p>نسعى إلى سد الفجوة بين التحديات المعقدة والحلول الفعّالة، بالحفاظ على أعلى معايير النزاهة وتقديم نتائج فعّالة من حيث التكلفة لشركائنا.</p>
+      </article>
+      <article class="info-box">
+        <i class="fas fa-eye" aria-hidden="true"></i>
         <h3>رؤيتنا</h3>
-        <p>أن نكون الشريك الأول للحلول المتكاملة، وأن نحظى بالتقدير العالمي لتعدد استخداماتنا، وتميزنا التشغيلي، والتزامنا الراسخ بنجاح عملائنا.</p>
-    </div>
-
-    <div class="info-box">
-        <i class="fas fa-laptop"></i>
+        <p>أن نكون الشريك الأول للحلول المتكاملة، وأن نحظى بالتقدير العالمي لتعدد استخداماتنا والتزامنا الراسخ بنجاح عملائنا.</p>
+      </article>
+      <article class="info-box">
+        <i class="fas fa-laptop" aria-hidden="true"></i>
         <h3>منتجات عصرية</h3>
         <p>من أجهزة المستخدمين النهائيين إلى البنية التحتية الكاملة للشبكة، نوفر مجموعة شاملة من منتجات تقنية المعلومات لتلبية متطلبات عالم الأعمال الحديث.</p>
-    </div>
-
-    <div class="info-box">
-        <i class="fas fa-lightbulb"></i>
+      </article>
+      <article class="info-box">
+        <i class="fas fa-lightbulb" aria-hidden="true"></i>
         <h3>حلول مبتكرة</h3>
         <p>نستفيد من طيف واسع من الحلول التكنولوجية المتطورة وأفضل الممارسات البرمجية لتزويد عملائنا بميزة تنافسية في قطاعاتهم.</p>
-    </div>
-
-    <div class="info-box">
-        <i class="fas fa-life-ring"></i>
+      </article>
+      <article class="info-box">
+        <i class="fas fa-life-ring" aria-hidden="true"></i>
         <h3>خدمات الدعم</h3>
         <p>لضمان استمرارية الأداء بدون انقطاع، نقدم خدمات الدعم الفني والصيانة من البسيطة إلى المعقدة، بالإضافة إلى الاستشارات والتدريب التقني.</p>
+      </article>
     </div>
-</section>
+  </section>
 
+  <!-- Why Choose SERVA -->
+  <section class="why-serva" aria-labelledby="why-title">
+    <h2 id="why-title" class="section-title">لماذا تختار سيرفا؟</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <h3><i class="fas fa-shield-alt" aria-hidden="true"></i> رؤية شاملة</h3>
+        <p>نغطي كافة احتياجاتك التشغيلية والتقنية تحت سقف واحد وبكفاءة عالية.</p>
+      </div>
+      <div class="why-card">
+        <h3><i class="fas fa-map-marked-alt" aria-hidden="true"></i> خبرة محلية</h3>
+        <p>نفهم تحديات السوق ونقدم حلولاً مخصصة تناسب بيئة العمل المحلية.</p>
+      </div>
+      <div class="why-card">
+        <h3><i class="fas fa-clock" aria-hidden="true"></i> استجابة سريعة</h3>
+        <p>فريق الدعم لدينا متاح على مدار الساعة لضمان استمرارية أعمالكم.</p>
+      </div>
+      <div class="why-card">
+        <h3><i class="fas fa-certificate" aria-hidden="true"></i> جودة مضمونة</h3>
+        <p>نلتزم بأعلى معايير الجودة العالمية في جميع مشاريعنا ومنتجاتنا.</p>
+      </div>
+    </div>
+  </section>
 
+</main>
 
-
-
-    <section class="container">
-        <h2 class="section-title">لماذا تختار سيرفا؟</h2>
-        <div class="services-grid">
-            <div class="card">
-                <div class="card-content">
-                    <h3>رؤية شاملة</h3>
-                    <p>نغطي كافة احتياجاتك التشغيلية والتقنية تحت سقف واحد وبكفاءة عالية.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h3>خبرة محلية</h3>
-                    <p>نفهم تحديات السوق ونقدم حلولاً مخصصة تناسب بيئة العمل واحتياجات الجمهور.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-   <footer>
-    <div class="footer-main">
-        <div class="footer-col">
-            <h2>SERVA</h2>
-            <p style="font-weight: bold; color: #ffffff;">SERVA for Integrated Solutions CO.LTD</p>
-            <p>سيرفا تقدم حلولاً متكاملة وخدمات متنوعة لمساعدة الشركات على النجاح في سوق سريع التغير. التزامنا بالجودة ورضا العملاء يجعلنا شريكاً موثوقاً للمؤسسات التي تبحث عن حلول شاملة.</p>
-            <div class="footer-socials">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-
-        <div class="footer-col">
-            <h3>روابط سريعة</h3>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="services.html">الحلول</a></li>              
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>خدماتنا</h3>
-            <ul>
-                <li><a href="#">الخدمات اللوجستية</a></li>
-                <li><a href="#">ICT Equipment</a></li>
-                <li><a href="#">الدعم الفني</a></li>
-                <li><a href="#">الشبكات</a></li>
-                <li><a href="#">أنظمة CCTV</a></li>
-                <li><a href="#">البرمجة</a></li>
-                <li><a href="#">الإستيراد والتصدير</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>اتصل بنا</h3>
-            <p><i class="fas fa-phone-alt"></i> &nbsp; 00249-915028859</p>
-            <p><i class="fas fa-envelope"></i> &nbsp; info@serva.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> &nbsp; السودان</p>
-            
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps?q=15.664893898212664,	32.44413397962327&z=13&output=embed" 
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
+<!-- Footer -->
+<footer role="contentinfo">
+  <div class="footer-main">
+    <!-- Brand column -->
+    <div class="footer-col">
+      <h2>SERVA</h2>
+      <p class="footer-tagline">SERVA for Integrated Solutions CO.LTD</p>
+      <p>سيرفا تقدم حلولاً متكاملة وخدمات متنوعة لمساعدة الشركات على النجاح في سوق سريع التغير.</p>
+      <nav class="footer-socials" aria-label="روابط التواصل الاجتماعي">
+        <a href="#" aria-label="فيسبوك" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" aria-label="تويتر" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" aria-label="انستغرام" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="لينكد إن" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+      </nav>
     </div>
 
-    <div class="footer-bottom">
-        Copyright reserved to <span style="font-weight: bold; color: #ffffff;">SERVA</span> &copy; 2026
+    <!-- Quick links -->
+    <div class="footer-col">
+      <h3>روابط سريعة</h3>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">الحلول</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
     </div>
+
+    <!-- Services links -->
+    <div class="footer-col">
+      <h3>خدماتنا</h3>
+      <ul>
+        <li><a href="services.html">الخدمات اللوجستية</a></li>
+        <li><a href="services.html">ICT Equipment</a></li>
+        <li><a href="services.html">الدعم الفني</a></li>
+        <li><a href="services.html">الشبكات</a></li>
+        <li><a href="services.html">أنظمة CCTV</a></li>
+        <li><a href="services.html">الطاقة المتجددة</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact info -->
+    <div class="footer-col">
+      <h3>اتصل بنا</h3>
+      <address style="font-style:normal;">
+        <p class="footer-contact-item">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <!-- Security: use tel: link for phone numbers (accessibility + usability) -->
+          <a href="tel:+249915028859" style="color:inherit;">00249-915028859</a>
+        </p>
+        <p class="footer-contact-item">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:info@serva.com" style="color:inherit;">info@serva.com</a>
+        </p>
+        <p class="footer-contact-item">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          <span>الخرطوم، السودان</span>
+        </p>
+      </address>
+
+      <div class="map-container">
+        <!-- Security: title for accessibility, loading=lazy for performance -->
+        <iframe
+          src="https://www.google.com/maps?q=15.664893898212664,32.44413397962327&z=13&output=embed"
+          title="موقع سيرفا على خريطة جوجل"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    جميع الحقوق محفوظة لـ <strong>SERVA</strong> &copy; <time datetime="2026">2026</time>
+  </div>
 </footer>
 
-    
+<!-- Scroll to top button -->
+<button id="scroll-top" aria-label="العودة إلى الأعلى">
+  <i class="fas fa-chevron-up" aria-hidden="true"></i>
+</button>
 
-<!--<script>
-    function changeLanguage(lang) {
-        // lang تأخذ قيمة 'en' أو 'ar'
-        // هذا الكود يزرع ملف تعريف ارتباط (Cookie) يخبر جوجل باللغة المطلوبة
-        document.cookie = "googtrans=/ar/" + lang + "; path=/; domain=" + window.location.hostname;
-        document.cookie = "googtrans=/ar/" + lang + "; path=/;";
-        // إعادة تحميل الصفحة لتطبيق الترجمة الفورية
-        window.location.reload();
-    }
+<!-- Google Translate (deferred for performance) -->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'ar', // لغة الموقع الأصلية
-            includedLanguages: 'ar,en', // اللغات المسموح بها
-            autoDisplay: false
-        }, 'google_translate_element');
-    }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-
-
-
-<script>
-    function changeLanguage(lang) {
-        // 1. محاولة الترجمة الفورية عبر القائمة المخفية
-        var combo = document.querySelector('.goog-te-combo');
-        if (combo) {
-            combo.value = lang;
-            // إنشاء حدث (Event) متوافق مع قيود المتصفحات الحديثة
-            var e = document.createEvent('HTMLEvents');
-            e.initEvent('change', true, true);
-            combo.dispatchEvent(e);
-        }
-        
-        // 2. تفعيل الكوكيز كدعم إضافي (تعمل بشكل مثالي على الاستضافة)
-        document.cookie = "googtrans=/ar/" + lang + "; path=/;";
-        if (window.location.hostname !== "") {
-            document.cookie = "googtrans=/ar/" + lang + "; domain=" + window.location.hostname + "; path=/;";
-        }
-    }
-
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'ar', 
-            includedLanguages: 'ar,en', 
-            autoDisplay: false
-        }, 'google_translate_element');
-    }
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script src="script.js"></script>
+<!-- Main script (defer = non-blocking, runs after DOM parse) -->
+<script src="script.js" defer></script>
 
 </body>
 </html>

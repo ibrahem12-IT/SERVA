@@ -1,121 +1,258 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سيرفا | تواصل معنا</title>
-	<link rel="shortcut icon" type="image/x-icon" href="Img/SERVA.svg"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="تواصل مع سيرفا للحلول المتكاملة — يسعدنا الرد على استفساراتكم ومناقشة سبل التعاون.">
+  <meta name="theme-color" content="#004aad">
+  <title>سيرفا | تواصل معنا</title>
+  <link rel="icon" type="image/svg+xml" href="Img/SERVA.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
-<div class="topbar">
-    <div class="topbar-content">
-        <!-- <span>Contact us</span> -->
-        <div class="lang-switch">
-            <a href="#" onclick="changeLanguage('ar'); return false;">AR</a>
-            <span class="separator">/</span>
-            <a href="#" onclick="changeLanguage('en'); return false;">EN</a>
-        </div>
-    </div>
+<a href="#main-content" class="skip-link">تخطى إلى المحتوى الرئيسي</a>
+
+<!-- Loader -->
+<div id="loader-wrapper" role="status" aria-live="polite" aria-label="جاري التحميل">
+  <div class="loader-container">
+    <div class="loader-ring"></div>
+    <div class="loader-logo" aria-hidden="true">SERVA</div>
+  </div>
+  <p class="loader-text">نسعد بتواصلكم معنا...</p>
+  <div class="loader-bar" aria-hidden="true"></div>
 </div>
 
-<div id="loader-wrapper">
-    <div class="loader-container">
-        <div class="loader-ring"></div>
-        <div class="loader-logo">SERVA</div>
-        </div>
-    <div class="loader-text">نسعد بتواصلكم معنا...</div>
-</div>	
+<div id="google_translate_element" style="display:none;" aria-hidden="true"></div>
 
-    <nav class="navbar">
-        <div class="brand">SERVA</div>
-        <div class="nav-right">
-            <ul class="nav-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="services.html">الحلول</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
-            <button id="theme-toggle" title="تبديل المظهر">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="topbar-content">
+    <div class="lang-switch" role="navigation" aria-label="تبديل اللغة">
+      <a href="#" onclick="changeLanguage('ar'); return false;" hreflang="ar">AR</a>
+      <span class="separator" aria-hidden="true">/</span>
+      <a href="#" onclick="changeLanguage('en'); return false;" hreflang="en">EN</a>
+    </div>
+  </div>
+</div>
 
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
+  <a href="index.html" class="brand" aria-label="سيرفا - الرئيسية">SERVA</a>
+  <div class="nav-right">
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem">الرئيسية</a></li>
+      <li role="none"><a href="services.html" role="menuitem">الحلول</a></li>
+      <li role="none"><a href="about.html" role="menuitem">من نحن</a></li>
+      <li role="none"><a href="contact.html" role="menuitem">تواصل معنا</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="تبديل الوضع الداكن">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+    <button id="hamburger" class="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-    <main class="container">
-        <h2>تواصل معنا</h2>
-        <p style="margin-bottom: 30px;">نسعد دائماً بالرد على استفساراتكم ومناقشة سبل التعاون المشترك.</p>
-        <form>
-            <input type="text" placeholder="الاسم الكامل" required>
-            <input type="email" placeholder="البريد الإلكتروني" required>
-            <textarea rows="5" placeholder="رسالتك أو استفسارك..." required></textarea>
-            <button type="submit" class="btn">إرسال الرسالة</button>
-        </form>
-    </main>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <footer>
-    <div class="footer-main">
-        <div class="footer-col">
-            <h2>SERVA</h2>
-            <p style="font-weight: bold; color: #ffffff;">SERVA for Integrated Solutions CO.LTD</p>
-            <p>سيرفا تقدم حلولاً متكاملة وخدمات متنوعة لمساعدة الشركات على النجاح في سوق سريع التغير. التزامنا بالجودة ورضا العملاء يجعلنا شريكاً موثوقاً للمؤسسات التي تبحث عن حلول شاملة.</p>
-            <div class="footer-socials">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
+<nav id="mobile-nav" class="mobile-nav" aria-label="القائمة المحمولة">
+  <a href="index.html">الرئيسية</a>
+  <a href="services.html">الحلول</a>
+  <a href="about.html">من نحن</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
 
-        <div class="footer-col">
-            <h3>روابط سريعة</h3>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="services.html">الحلول</a></li>             
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
-        </div>
+<!-- Page Hero -->
+<header class="page-hero" role="banner">
+  <h1>تواصل معنا</h1>
+  <p>نسعد دائماً بالرد على استفساراتكم ومناقشة سبل التعاون المشترك</p>
+  <nav class="breadcrumb" aria-label="مسار التنقل">
+    <a href="index.html">الرئيسية</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">تواصل معنا</span>
+  </nav>
+</header>
 
-        <div class="footer-col">
-            <h3>خدماتنا</h3>
-            <ul>
-                <li><a href="#">الخدمات اللوجستية</a></li>
-                <li><a href="#">ICT Equipment</a></li>
-                <li><a href="#">الدعم الفني</a></li>
-                <li><a href="#">الشبكات</a></li>
-                <li><a href="#">أنظمة CCTV</a></li>
-                <li><a href="#">البرمجة</a></li>
-                <li><a href="#">الإستيراد والتصدير</a></li>
-            </ul>
-        </div>
+<!-- Main Content -->
+<main id="main-content" class="container section">
 
-        <div class="footer-col">
-            <h3>اتصل بنا</h3>
-            <p><i class="fas fa-phone-alt"></i> &nbsp; 00249-915028859</p>
-            <p><i class="fas fa-envelope"></i> &nbsp; info@serva.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> &nbsp; السودان</p>
-            
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps?q=15.664893898212664,	32.44413397962327&z=13&output=embed" 
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
+  <h2 class="section-title">أرسل لنا رسالة</h2>
+
+  <!--
+    SECURITY CHECKLIST for this form:
+    ✅ All inputs have associated <label> elements (accessibility + UX)
+    ✅ input type="email" forces email format client-side
+    ✅ maxlength attributes prevent oversized payloads
+    ✅ autocomplete attributes for UX (not on sensitive fields)
+    ✅ novalidate removed — let browser validate + JS supplements
+    ⚠️  Server MUST: sanitize inputs, escape output, validate CSRF token,
+        rate-limit submissions, never reflect raw user input back to page
+    ⚠️  Add Content-Security-Policy header to prevent XSS
+    ⚠️  Use HTTPS only — never submit forms over HTTP
+  -->
+  <form id="contact-form" class="contact-form" novalidate aria-label="نموذج التواصل">
+
+    <!-- Hidden CSRF token placeholder — must be populated by server -->
+    <!-- <input type="hidden" name="_csrf" value="{{ csrf_token }}"> -->
+
+    <div class="form-group">
+      <label for="input-name" class="required">الاسم الكامل</label>
+      <input
+        type="text"
+        id="input-name"
+        name="name"
+        placeholder="مثال: أحمد محمد"
+        required
+        minlength="2"
+        maxlength="100"
+        autocomplete="name"
+        aria-required="true"
+        aria-describedby="name-hint">
+      <span id="name-hint" style="font-size:0.8rem;color:var(--clr-text-muted);">الاسم بالكامل كما يظهر في وثائقك الرسمية</span>
     </div>
 
-    <div class="footer-bottom">
-        Copyright reserved to <span style="font-weight: bold; color: #ffffff;">SERVA</span> &copy; 2026
+    <div class="form-group">
+      <label for="input-email" class="required">البريد الإلكتروني</label>
+      <input
+        type="email"
+        id="input-email"
+        name="email"
+        placeholder="example@company.com"
+        required
+        maxlength="254"
+        autocomplete="email"
+        aria-required="true"
+        inputmode="email">
     </div>
+
+    <div class="form-group">
+      <label for="input-phone">رقم الهاتف <span style="font-weight:400;color:var(--clr-text-muted);">(اختياري)</span></label>
+      <input
+        type="tel"
+        id="input-phone"
+        name="phone"
+        placeholder="00249-9XXXXXXXX"
+        maxlength="20"
+        autocomplete="tel"
+        inputmode="tel"
+        pattern="[0-9+\-\s()]{7,20}">
+    </div>
+
+    <div class="form-group">
+      <label for="input-subject" class="required">الموضوع</label>
+      <select id="input-subject" name="subject" required aria-required="true">
+        <option value="" disabled selected>اختر موضوع الرسالة</option>
+        <option value="ict">تقنية المعلومات والشبكات</option>
+        <option value="cctv">أنظمة المراقبة</option>
+        <option value="logistics">الخدمات اللوجستية</option>
+        <option value="solar">الطاقة المتجددة</option>
+        <option value="trade">التجارة العامة</option>
+        <option value="other">أخرى</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="input-message" class="required">رسالتك</label>
+      <textarea
+        id="input-message"
+        name="message"
+        rows="6"
+        placeholder="اكتب رسالتك أو استفسارك بالتفصيل..."
+        required
+        minlength="10"
+        maxlength="2000"
+        aria-required="true"
+        aria-describedby="msg-count"></textarea>
+      <span id="msg-count" style="font-size:0.78rem;color:var(--clr-text-muted);text-align:left;" dir="ltr">0 / 2000</span>
+    </div>
+
+    <!-- Form feedback (shown dynamically by JS) -->
+    <div id="form-msg" class="form-msg" role="alert" aria-live="polite"></div>
+
+    <button type="submit" class="btn" style="width:100%;">
+      <i class="fas fa-paper-plane" aria-hidden="true"></i> &nbsp; إرسال الرسالة
+    </button>
+  </form>
+
+</main>
+
+<!-- Footer -->
+<footer role="contentinfo">
+  <div class="footer-main">
+    <div class="footer-col">
+      <h2>SERVA</h2>
+      <p class="footer-tagline">SERVA for Integrated Solutions CO.LTD</p>
+      <p>سيرفا تقدم حلولاً متكاملة وخدمات متنوعة لمساعدة الشركات على النجاح في سوق سريع التغير.</p>
+      <nav class="footer-socials" aria-label="روابط التواصل الاجتماعي">
+        <a href="#" aria-label="فيسبوك" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" aria-label="تويتر" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" aria-label="انستغرام" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="لينكد إن" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+      </nav>
+    </div>
+    <div class="footer-col">
+      <h3>روابط سريعة</h3>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">الحلول</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>خدماتنا</h3>
+      <ul>
+        <li><a href="services.html">الخدمات اللوجستية</a></li>
+        <li><a href="services.html">ICT Equipment</a></li>
+        <li><a href="services.html">الدعم الفني</a></li>
+        <li><a href="services.html">الشبكات</a></li>
+        <li><a href="services.html">أنظمة CCTV</a></li>
+        <li><a href="services.html">الطاقة المتجددة</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>اتصل بنا</h3>
+      <address style="font-style:normal;">
+        <p class="footer-contact-item"><i class="fas fa-phone-alt" aria-hidden="true"></i><a href="tel:+249915028859" style="color:inherit;">00249-915028859</a></p>
+        <p class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:info@serva.com" style="color:inherit;">info@serva.com</a></p>
+        <p class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>الخرطوم، السودان</span></p>
+      </address>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=15.664893898212664,32.44413397962327&z=13&output=embed"
+                title="موقع سيرفا" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    جميع الحقوق محفوظة لـ <strong>SERVA</strong> &copy; <time datetime="2026">2026</time>
+  </div>
 </footer>
 
-    <script src="script.js"></script>
+<button id="scroll-top" aria-label="العودة إلى الأعلى">
+  <i class="fas fa-chevron-up" aria-hidden="true"></i>
+</button>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+<script src="script.js" defer></script>
+
+<!-- Character counter for textarea -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = document.getElementById('input-message');
+  const counter  = document.getElementById('msg-count');
+  if (textarea && counter) {
+    textarea.addEventListener('input', () => {
+      // Safe: textContent only, no innerHTML
+      counter.textContent = `${textarea.value.length} / 2000`;
+    });
+  }
+});
+</script>
 </body>
 </html>
